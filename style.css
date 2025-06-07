@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.note-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.note-input input,
+.note-input textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 100%;
+  resize: vertical;
+  min-height: 60px;
+  transition: border-color 0.3s;
+}
+
+.note-input input {
+  flex: 1 1 30%;
+  min-height: 40px;
+}
+
+.note-input input:focus,
+.note-input textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.note-input button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1 1 20%;
+  min-width: 120px;
+  transition: background-color 0.3s;
+}
+
+.note-input button:hover {
+  background-color: #45a049;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #fefefe;
+  border-left: 6px solid #4caf50;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  position: relative;
+  word-break: break-word;
+}
+
+.note-card h4 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+}
+
+.note-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 15px;
+  white-space: pre-wrap;
+}
+
+/* Highlighted key points style */
+.highlight {
+  font-weight: 700;
+  color: #d32f2f;
+}
+
+/* Delete button style */
+.note-card button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #d32f2f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+.note-card button:hover {
+  background-color: #9a0007;
+}

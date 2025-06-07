@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lecture Notes Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Lecture Notes Organizer</h1>
+    
+    <div class="note-input">
+      <input type="text" id="noteCategory" placeholder="Enter category..." />
+      <input type="file" id="pdfInput" accept="application/pdf" />
+      <button onclick="handlePDF()">Summarize & Add</button>
+    </div>
+
+    <div id="notesContainer" class="notes-grid"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
